@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>EV Route Optimization</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #4bbb7d;
+    }
+
+    header {
+      background: #4bbb7d;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    .header h3 {
+      font-size: 2rem;
+      margin: 0.5rem 0;
+    }
+
+    .header p {
+      font-size: 1rem;
+      margin: 0.5rem 0 1.5rem;
+    }
+
+    /* Navigation Bar */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .nav__logo {
+      height: 50px;
+      cursor: pointer;
+    }
+
+    .nav__links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .nav__link {
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+
+    .nav__link--btn {
+      background-color: white;
+      color: #4bbb7d;
+      border: 2px solid white;
+    }
+
+    .nav__link--btn:hover {
+      background-color: #379e67;
+      color: white;
+      border: 2px solid white;
+    }
+
+    /* Main Content */
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    #map-container {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #map {
+      margin-top: 1rem;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+    }
+
+    #details-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    #details-container div {
+      flex: 1;
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    pre {
+      background: #f4f4f4;
+      padding: 1rem;
+      border-radius: 5px;
+      overflow-x: auto;
+      font-family: monospace;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html">
+        <img src="img/ev_logo.jpeg" alt="EV Logo" class="nav__logo" id="logo" />
+      </a>
+      <ul class="nav__links">
+      
+        
+    </nav>
+    <h3 class="section__header">EV Route Optimization</h3>
+    <p>Find the nearest EV charging stations in Bangalore, India.</p>
+  </header>
+  <main>
+    <section id="map-container">
+      <h2>Map</h2>
+      <div id="map" style="height: 500px; width: 100%;"></div>
+    </section>
+    <section id="details-container">
+      <div>
+        <h3>Request</h3>
+        <pre id="request">Fetching data...</pre>
+      </div>
+      <div>
+        <h3>Response</h3>
+        <pre id="response">Awaiting response...</pre>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>EV Route Optimization Project &copy; 2024</p>
+  </footer>
+  <script src="map.js" defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
+</body>
+</html>

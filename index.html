@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/ev_logo.jpeg" />
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>E-Mobility | Power up your drive</title>
+
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img src="img/ev_logo.jpeg" alt="ev logo" class="nav__logo" id="logo" data-version-number="3.0" />
+            <ul class="nav__links">
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--1">Tips & Resources</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--2">Find a Charging Station</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--3">Benefits of Going Electric</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link nav__link--btn btn--show-modal" href="#">Locate Charger</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__title">
+            <!-- <h1 onclick="alert('HTML alert')"> -->
+            <h1>
+                <span class="highlight">E-Mobility</span>
+                Power up your drive<br />
+            </h1>
+            <h4>Find the closest EV charging station in seconds!</h4>
+            <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+            <img src="img/ev_hero.jpg" class="header__img" alt="Power up your drive." />
+        </div>
+    </header>
+
+    <section class="section" id="section--1">
+        <div class="section__title">
+            <h2 class="section__description">Tips & Resources</h2>
+            <h3 class="section__header">
+                Everything you need to know.
+            </h3>
+        </div>
+
+        <div class="features">
+            <img src="img/1_T&R.jpeg" data-src="img/1_T&R.jpeg" alt="EV CAR" class="features__img lazy-img" />
+            <div class="features__feature">
+                <div class="features__icon">
+                    <svg>
+                        <use xlink:href="img/icons.svg#icon-monitor"></use>
+                    </svg>
+                </div>
+                <h5 class="features__header">Charge Smarter, Drive Longer</h5>
+                <p>
+                    Get insider tips on efficient charging, understanding charger types, and prolonging your EV's
+                    battery life.
+                </p>
+            </div>
+
+            <div class="features__feature">
+                <div class="features__icon">
+                    <svg>
+                        <use xlink:href="img/icons.svg#icon-trending-up"></use>
+                    </svg>
+                </div>
+                <h5 class="features__header">Master the Art of EV Charging</h5>
+                <p>
+                    Your go-to guide for mastering EV charging—from home setups to on-the-go solutions.
+                </p>
+            </div>
+            <img src="img/2_T&R.jpeg" data-src="img/2_T&R.jpeg" alt="EV Station" class="features__img lazy-img" />
+
+            <img src="img/3_T&R.jpeg" data-src="img/3_T&R.jpeg" alt="Mobile" class="features__img lazy-img" />
+            <div class="features__feature">
+                <div class="features__icon">
+                    <svg>
+                        <use xlink:href="img/icons.svg#icon-credit-card"></use>
+                    </svg>
+                </div>
+                <h5 class="features__header">Your EV Ownership Made Easy</h5>
+                <p>
+                    Stay ahead with practical resources and expert advice to make EV ownership a breeze.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="section--2">
+        <div class="section__title">
+            <h2 class="section__description">How to Use?</h2>
+            <h3 class="section__header">
+                Everything as simple as possible.
+            </h3>
+        </div>
+
+        <div class="operations">
+            <div class="operations__tab-container">
+                <button class="btn operations__tab operations__tab--1 operations__tab--active" data-tab="1">
+                    <span>01</span>Add Details
+                </button>
+                <button class="btn operations__tab operations__tab--2" data-tab="2">
+                    <span>02</span>Enable Location
+                </button>
+                <button class="btn operations__tab operations__tab--3" data-tab="3">
+                    <span>03</span>Pick nearby station
+                </button>
+            </div>
+            <div class="operations__content operations__content--1 operations__content--active">
+                <div class="operations__icon operations__icon--1">
+                    <svg>
+                        <use xlink:href="img/icons.svg#icon-upload"></use>
+                    </svg>
+                </div>
+                <h5 class="operations__header">
+                    Add Your Details
+                </h5>
+                <p>
+                    Start by entering your basic details like name, phone number, email, and your location preferences.
+                    This helps us personalize your experience and provide the best recommendations tailored to your
+                    needs.
+                </p>
+            </div>
+
+            <div class="operations__content operations__content--2">
+                <div class="operations__icon operations__icon--2">
+                    <svg>
+                        <use xlink:href="img/icons.svg#icon-home"></use>
+                    </svg>
+                </div>
+                <h5 class="operations__header">
+                    Enable Location
+                </h5>
+                <p>
+                    Turn on your device's location to allow our system to pinpoint your current spot. This ensures
+                    accurate results and directs you to the closest charging stations in real time.
+                </p>
+            </div>
+            <div class="operations__content operations__content--3">
+                <div class="operations__icon operations__icon--3">
+                    <svg>
+                        <use xlink:href="img/icons.svg#icon-user-x"></use>
+                    </svg>
+                </div>
+                <h5 class="operations__header">
+                    Pick the Nearest EV Station
+                </h5>
+                <p>
+                    Browse a list of nearby charging stations, complete with distance, availability, and charger type.
+                    Simply choose the most convenient option and navigate there seamlessly
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="section--3">
+        <div class="section__title section__title--testimonials">
+            <h2 class="section__description">What are the benefits?</h2>
+            <h3 class="section__header">
+                Some major reasons to go electric.
+            </h3>
+        </div>
+
+        <div class="slider">
+            <div class="slide">
+                <div class="testimonial">
+                    <h5 class="testimonial__header">"Breathe cleaner, drive greener with electric vehicles."</h5>
+                    <blockquote class="testimonial__text">
+                        Drive an EV to reduce air pollution and enjoy a healthier environment. Electric vehicles run on
+                        clean energy, cutting down harmful emissions. <br>They promote a sustainable future by
+                        minimizing
+                        reliance on fossil fuels. Choose an eco-friendly ride that aligns with the planet’s needs.<br>
+                        Every
+                        mile driven in an EV supports a cleaner tomorrow.
+                    </blockquote>
+
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="testimonial">
+                    <h5 class="testimonial__header">
+                        "Less noise, more power—experience the future of driving."
+                    </h5>
+                    <blockquote class="testimonial__text">
+                        EVs offer quiet, smooth rides without compromising performance. Instant torque delivers
+                        impressive acceleration and power. Say goodbye to noisy engines and hello to futuristic
+                        driving.<br>
+                        Experience cutting-edge technology with unparalleled comfort. The future of driving starts with
+                        electric innovation.
+                    </blockquote>
+
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="testimonial">
+                    <h5 class="testimonial__header">
+                        "From cost savings to climate care, EVs are the ultimate win-win."
+                    </h5>
+                    <blockquote class="testimonial__text">
+                        Save on fuel and maintenance while reducing your carbon footprint. Electric vehicles combine
+                        financial and environmental benefits effortlessly.<br> Benefit from government incentives and
+                        lower
+                        running costs. Drive sustainably without sacrificing convenience or style. <br>EVs are smart for
+                        your wallet and great for the planet.
+                    </blockquote>
+
+                </div>
+            </div>
+            <div class="slide">
+                <div class="testimonial">
+                    <h5 class="testimonial__header">
+                        "Zero emissions, maximum efficiency."
+                    </h5>
+                    <blockquote class="testimonial__text">
+                        Electric vehicles eliminate harmful tailpipe emissions, helping to combat air pollution.
+                        With advanced technology, EVs deliver top-notch energy efficiency and performance.<br>
+                        They use clean energy sources, reducing reliance on fossil fuels.
+                        Drive smarter with vehicles that balance eco-friendliness and innovation.
+                        Choose an EV for a greener planet and an efficient driving experience.
+                    </blockquote>
+
+                </div>
+            </div>
+            <div class="slide">
+                <div class="testimonial">
+                    <h5 class="testimonial__header">
+                        "Drive electric—because the Earth deserves better."
+                    </h5>
+                    <blockquote class="testimonial__text">
+                        Switching to EVs means reducing your carbon footprint and protecting the environment.
+                        Electric vehicles support sustainable practices for a healthier planet.
+                        Every electric mile driven contributes to preserving natural resources.<br>
+                        Join the movement towards cleaner air and a sustainable future.
+                        Driving electric isn’t just a choice—it’s a responsibility to the Earth.
+                    </blockquote>
+
+                </div>
+            </div>
+
+            <button class="slider__btn slider__btn--left">&larr;</button>
+            <button class="slider__btn slider__btn--right">&rarr;</button>
+            <div class="dots"></div>
+        </div>
+    </section>
+
+    <section class="section section--sign-up">
+        <div class="section__title">
+            <h3 class="section__header">
+                E-Mobility | Power Up your Drive!
+            </h3>
+        </div>
+        <button class="btn btn--show-modal">Find your nearest charging station now!</button>
+    </section>
+
+    <footer class="footer">
+
+        <img src="img/ev_logo.jpeg" alt="Logo" class="footer__logo" />
+        <h2 class="footer__title">
+            THANK YOU. We appreciate your commitment to driving change—one electric mile at a time!
+        </h2>
+    </footer>
+    <!--Completed Till HERE - 24.11.2024-->
+    <!--Things i need to open: VSCODE e-mob,advance_DOM_final_JS, pinterest, ChatGPT, Chrome-JS,Emob-->
+
+    <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">
+            Click on<span class="highlight">Next step </span> to find the nearest charger<br />
+            
+        </h2>
+        <form class="modal__form">
+            <div id="location">
+                <p id="latitude"></p>
+                <p id="longitude"></p>
+                <p id="accuracy"></p>
+            </div>
+            <a href="result.html" button type="button" button class=" btn" style="text-decoration: none;" color:
+                black;>Next Step &rarr;</button>
+
+                <!--  <button class=" btn">Next step &rarr;</button>
+                <script>
+                document.querySelector('.btn').addEventListener('click', function () {
+                    window.location.href = 'result.html';
+                });
+            </script>-->
+        </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
